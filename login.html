@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        input{
+            padding: 10px;
+            outline: none;
+        }
+        .submit{
+            padding: 5px;
+            cursor: pointer;
+        }
+        .errMsg{
+            color: red;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+</head>
+
+<body>
+
+    <!-- ==== Heading ==== -->
+    <table align="center" bgcolor="#0B84EE" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="center">
+                <font color="white">
+                    <h1>Facebook</h1>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- ==== Login Form  ====-->
+    <form action="" method="" onsubmit="return false">
+        <table bgcolor="#F0F2F5" width="100%" height="400" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                    <table bgcolor="#fff" align="center" cellspacing="5" cellpadding="10" width="30%" border="0">
+                        <tr>
+                            <td align="right">Email or Phone: </td>
+                            <td align="center">
+                                <input class="email" type="text" placeholder="Type your Email or Phone">
+                                <div class="emailErr errMsg"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">Password: </td>
+                            <td align="center">
+                                <input class="pass" type="password" placeholder="Enter Your Password">
+                                <div class="passErr errMsg"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td align="center">
+                                <input class="submit" type="submit" value="Login">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td align="center">
+                                <a href="#">Forgot your password?</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td align="center">
+                                <a href="#">
+                                    <button>Create New Account</button>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- ================ Bottom ========== -->
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <a href="#" align="center">
+                                    <h3>Create a page</h3>
+                                </a>
+                            </td>
+                            <td>
+                                <p align="center">for a celebrity, brand or business.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script src="js/login.js"></script>
+</html>

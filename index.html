@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        span {
+            color: red;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        input{
+            outline: none;
+        }
+        .msg {
+            color: red;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <form action="" method="" class="form" onsubmit="return false">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table align="center">
+                <tr>
+                    <td>Saluation</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <select name="" id="">
+                            <option value="">--None--</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>First Name <span><sup>*</sup></span></td>
+                    <td>
+                        <input class="firstName" type="text" placeholder="First Name">
+                        <div class="fNameErr msg"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Last Name <span><sup>*</sup></span></td>
+                    <td>
+                        <input class="lastName" type="text" placeholder="Last Name">
+                        <div class="lNameErr msg"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender <span><sup>*</sup></span></td>
+                    <td>
+                        <input class="male" type="radio" name="gender"> Male
+                        <input class="female" type="radio" name="gender"> Female
+                        <div class="genderErr msg"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Email <span><sup>*</sup></span></td>
+                    <td>
+                        <input class="email" >
+                        <div class="emailErr msg"></div>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>Date of Birth <span><sup>*</sup></span></td>
+                    <td>
+                        <input class="date" type="date">
+                        <div class="dateErr msg"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address <span><sup>*</sup></span></td>
+                    <td>
+                        <textarea class="address" name="address" id="" cols="30" rows="10"
+                            placeholder="type your address here..... "></textarea>
+                        <div class="addErr msg"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="submit" type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+    </form>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
